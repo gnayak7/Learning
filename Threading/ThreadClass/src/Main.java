@@ -1,0 +1,10 @@
+
+public class Main {
+	public static void main(String[] args) {
+		ThreadDemo threadDemo1 = new ThreadDemo();
+		threadDemo1.start();
+		
+		ThreadDemo threadDemo2 = new ThreadDemo();
+		threadDemo2.start();
+	}
+}
