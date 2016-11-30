@@ -1,0 +1,8 @@
+package edu.asu.msse.gnayak2.demo2;
+public class Main {
+	public static void main(String[] args) {
+		Thread threadDemo1 = new Thread(new Thread2());
+		Thread threadDemo2 = new Thread(new Thread2());
+
+	}
+}
