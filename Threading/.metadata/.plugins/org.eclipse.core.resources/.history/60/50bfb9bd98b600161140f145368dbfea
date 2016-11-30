@@ -1,0 +1,18 @@
+package edu.asu.msse.gnayak2.threadclass;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		ThreadClass thread1 = new ThreadClass();
+		thread1.start();
+		
+		Scanner scanner = new Scanner(System.in);
+		scanner.nextLine();
+		
+		thread1.shutdown();
+
+	}
+
+}

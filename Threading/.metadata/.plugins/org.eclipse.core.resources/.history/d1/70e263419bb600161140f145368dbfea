@@ -1,0 +1,33 @@
+package edu.asu.msse.gnayak2.synchronization;
+
+public class Main {
+	private int count=0;
+	
+	public static void main(String[] args) {
+		Main main = new Main();
+		main.doWork();
+	}
+	
+	public void doWork() {
+		Thread thread1 = new Thread1(new Runnable(){
+			public void run() {
+				for(int i=0;i<10000;i++) {
+					count++;
+				}
+			}
+		});
+		
+		Thread thread1 = new Thread1(new Runnable(){
+			public void run() {
+				for(int i=0;i<10000;i++) {
+					count++;
+				}
+			}
+		});
+		
+		System.out.println("Thread Synchronization");
+		thread1.start();
+		thread2.start();
+	}
+
+}

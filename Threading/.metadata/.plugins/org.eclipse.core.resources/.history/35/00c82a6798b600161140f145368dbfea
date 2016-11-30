@@ -1,0 +1,16 @@
+package edu.asu.msse.gnayak2.threadclass;
+
+public class ThreadClass extends Thread {
+	// Since the thread is not changing 'running' variable nor its calling shutdown
+	// so it may decide to cache that variable and never check again. In that situation 
+	// the program runs infinitely. To prevent and force checking the value of variable 
+	// declare the variable as volatile. Its an indicator to compiler that its getting changed
+	// outside of the thread.
+	private boolean running = true;
+	
+	public void run() {
+		while(running) {
+			System.out.println("hello");
+		}
+	}
+}
